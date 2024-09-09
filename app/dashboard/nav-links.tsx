@@ -4,13 +4,14 @@ import {
     HomeIcon,
     DocumentDuplicateIcon,
   } from '@heroicons/react/24/outline';
+  import clsx from 'clsx';
   import Link from 'next/link';
   import { usePathname } from 'next/navigation';   
   // ...
    
   export default function NavLinks() {
     const pathname = usePathname();
-    import clsx from 'clsx';
+   
     return (
       <>
         {links.map((link) => {
